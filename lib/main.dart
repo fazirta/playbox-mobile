@@ -13,24 +13,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Playbox',
       theme: ThemeData(
-        colorScheme: ColorScheme(
-          primary: const Color(0xFF1B4242),
-          secondary: const Color(0xFF5C8374),
-          tertiary: const Color(0xFF7BB8A2),
-          surface: const Color(0xFFFCFAEE),
-          background: const Color(0xFFFCFAEE),
-          error: const Color(0xFFB8001F),
-          onPrimary: const Color(0xFF1B4242),
-          onSecondary: const Color(0xFF5C8374),
-          onTertiary: const Color(0xFF7BB8A2),
-          onSurface: const Color(0xFF1B4242),
-          onBackground: const Color(0xFF1B4242),
-          onError: const Color(0xFFB8001F),
+        colorScheme: const ColorScheme(
+          primary: Color(0xFF1B4242),
+          secondary: Color(0xFF5C8374),
+          tertiary: Color(0xFF7BB8A2),
+          surface: Color(0xFFFCFAEE),
+          error: Color(0xFFB8001F),
+          onPrimary: Color(0xFF1B4242),
+          onSecondary: Color(0xFF5C8374),
+          onTertiary: Color(0xFF7BB8A2),
+          onSurface: Color(0xFF1B4242),
+          onError: Color(0xFFB8001F),
           brightness: Brightness.light,
         ),
         useMaterial3: true,
       ),
-      home: MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
